@@ -1,0 +1,110 @@
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:
+    linear-gradient(
+        rgba(255,255,255,0.8),
+        rgba(255,255,255,0.8)
+    ),
+    url("rorr.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.header{
+    background-color: rgb(145, 0, 0);
+    height: 280px;
+    border-radius: 0 0 40px 40px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.teks-atas{
+    color: white;
+}
+
+.teks-1{
+    margin: 0;
+    font-size: 40px;
+}
+
+.teks-2{
+    margin-top: 5px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.persegi{
+    margin-top: -60px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-menu{
+    background-color: white;
+    border-radius: 30px;
+    padding: 25px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.319);
+
+    min-height: 250px;
+}
+
+.judul-card{
+    font-size: 27px;
+    color: rgb(145, 0, 0);
+    font-weight: 900;
+}
+
+.deskripsi-teks1{
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: -10px;
+    font-weight: 700;
+}
+
+.button-card{
+    margin-top: 20px;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(145, 0, 0);
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.button-card:hover{
+
+    transform: scale(1.02);
+}
+
+
+@media (max-width: 768px){
+    .teks-1{
+        font-size: 45px;
+    }
+    .teks-2{
+        font-size: 20px;
+    }
+
+}
+
+.button-card:hover{
+    transform: scale(1.02);
+}
+

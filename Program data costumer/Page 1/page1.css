@@ -1,0 +1,358 @@
+body{
+    margin: 0;
+    background:
+    linear-gradient(
+        rgba(128, 0, 0, 0.827),
+        rgba(171, 0, 0, 0.76)
+    ),
+    url("backgound/bg-deskop.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#campuran {
+    position: relative;
+    width: 600px;
+    height: 200px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*SEMUA TEXT*/
+
+#text,
+#text-2,
+#text-3{
+    position: absolute;
+    width: 100%;
+
+    text-align: center;
+    color: white;
+}
+
+/*TEXT 1*/
+
+#text {
+    display: flex;
+    flex-direction: column;
+    animation: text 7s infinite;
+}
+
+.atas {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.mitra,
+.tambak,
+.indonesia{
+    opacity: 0;
+}
+
+.mitra{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    margin: 0;
+
+    animation: kata 7s infinite;
+    animation-delay: 0.3s;
+}
+
+.tambak{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    margin: 0;
+
+    animation: kata 7s infinite;
+    animation-delay: 0.4s;
+}
+
+.indonesia{
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    margin: 0;
+
+    animation: kata 7s infinite;
+    animation-delay: 0.5s;
+}
+
+/*BUTTON*/
+
+.button{
+    position: relative;
+    z-index: 10;
+
+    margin-top: 120px;
+    padding: 2px 60px;
+
+    border: none;
+    border-radius: 30px;
+
+    font-size: 20px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    background-color: white;
+    color: rgb(122, 0, 0);
+
+    transition: 0.3s;
+
+    animation: fadeUp 1s ease forwards;
+}
+
+.button:hover{
+    background-color: black;
+    color: white;
+    transform: scale(1.05);
+}
+
+/*TEXT 2*/
+
+#text-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 5px;
+
+    animation: text2 7s infinite;
+}
+
+.solusi,
+.profesional{
+    opacity: 0;
+}
+
+.solusi{
+    margin: 0;
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+
+    animation: kata2 7s infinite;
+    animation-delay: 3s;
+}
+
+.profesional{
+    margin: 0;
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+
+    animation: kata2 7s infinite;
+    animation-delay: 3.1s;
+}
+
+/*TEXT 3*/
+
+#text-3{
+    display: flex;
+    flex-direction: column;
+
+    animation: text3 7s infinite;
+}
+
+.text-kualitas{
+    opacity: 0;
+
+    font-family: 'Inter', sans-serif;
+
+    animation: kata3 7s infinite;
+    animation-delay: 5.5s;
+}
+
+/*ANIMATION KATA*/
+
+@keyframes kata {
+
+    0%{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    5%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    20%{
+        opacity: 1;
+    }
+
+    25%{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
+
+/*ANIMATION KATA 2*/
+
+@keyframes kata2 {
+
+    0%{
+        opacity: 0;
+        transform: translateY(20px);
+        filter: blur(5px);
+    }
+
+    5%{
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+
+    20%{
+        opacity: 1;
+    }
+
+    25%{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
+
+/*ANIMATION KATA 3*/
+
+@keyframes kata3 {
+
+    0%{
+        opacity: 0;
+        transform: translateY(20px);
+        filter: blur(5px);
+    }
+
+    5%{
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+
+    20%{
+        opacity: 1;
+    }
+
+    25%{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
+
+/*SCENE TEXT 1*/
+
+@keyframes text {
+
+    0%{
+        opacity: 0;
+    }
+
+    5%{
+        opacity: 1;
+    }
+
+    30%{
+        opacity: 1;
+    }
+
+    40%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
+
+/*SCENE TEXT 2*/
+
+@keyframes text2 {
+
+    0%{
+        opacity: 0;
+    }
+
+    40%{
+        opacity: 0;
+    }
+
+    45%{
+        opacity: 1;
+    }
+
+    70%{
+        opacity: 1;
+    }
+
+    80%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
+
+/*SCENE TEXT 3*/
+
+@keyframes text3 {
+
+    0%{
+        opacity: 0;
+    }
+
+    75%{
+        opacity: 0;
+    }
+
+    80%{
+        opacity: 1;
+    }
+
+    95%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
+
+/*BUTTON ANIMATION*/
+
+@keyframes fadeUp {
+
+    from{
+        opacity: 0;
+        transform: translateY(0px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

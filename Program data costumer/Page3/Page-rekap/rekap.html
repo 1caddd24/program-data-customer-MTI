@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rekap.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <h1 class="judul">
+            Rekap Data Custumer
+        </h1>
+
+        <p class="subjudul">
+            Mitra tambak indonesia
+        </p>
+    </div>
+
+    <div class="area-filter">
+
+        <input type="text" id="input-cari" placeholder="Cari Data">
+        <select id="jenis-filter">
+
+            <option value="nama">Nama Customer
+            </option>
+
+            <option value="kincir">Kincir Air
+            </option>
+
+            <option value="tanggal">Tanggal 
+            </option>
+
+            <option value="unit">Jumlah unit
+            </option>
+        </select> 
+    </div>
+
+        <div class="table-area">
+            <div class="table-header">
+                <div>No</div>
+                <div>Nama</div>
+                <div>Alamat</div>
+                <div>Nomer</div>
+                <div>Jumlah unit</div>
+                <div>Kincir Air</div>
+                <div>Tanggal</div>
+                <div>Aksi</div>
+            </div>
+
+            <div id="wadah-data">
+            </div>
+        </div>
+    </div>
+
+    <a href="../page-3.html" class="btn-kembali">
+    Kembali
+</a>
+
+<script src="rekap.js"></script>
+</body>
+</html>

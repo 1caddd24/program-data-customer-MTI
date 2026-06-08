@@ -1,0 +1,134 @@
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+    background:
+    linear-gradient(
+        rgba(128, 0, 0, 0.827),
+        rgba(171, 0, 0, 0.76)
+    ),
+    url("tambak.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.keseluruhan{
+    height: 40vh;
+    display: flex;
+    align-items: center;
+}
+
+.teks-atas {
+    padding: 40px;
+    color:white;
+}
+
+.halo-admin{
+    margin: 0;
+    font-size: 45px;
+    opacity: 0;
+    transform: translateY(30px);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.login-dulu{
+    margin-top: 5px;
+    font-size: 24px;
+    font-weight: 400;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.wadah-login{
+    background-color: white;
+    min-height: 75vh;
+    border-radius: 40px 40px 0 0;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.muncul-card{
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.teks-login{
+    color: rgb(137, 0, 0);
+    margin-bottom: 30px;
+    font-size: 35px;
+}
+
+.input-login{
+    padding: 18px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 50px;
+    background-color: #f2f2f2;
+    font-size: 18px;
+    outline: none;
+}
+
+.input-login::placeholder{
+    color: #aaaaaa;
+}
+
+.input-password{
+    padding: 18px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 50px;
+    background-color: #f2f2f2;
+    font-size: 18px;
+    outline: none;
+}
+
+.input-password::placeholder{
+    color: #aaaaaa;
+}
+
+.button-login{
+    margin-top: 10px;
+    padding: 18px;
+    border: none;
+    border-radius: 50px;
+    background-color: rgb(137, 0, 0);
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button-login:hover{
+    transform: scale(1.02);
+}
+
+@media (max-width: 768px){
+    .halo-admin{
+        font-size: 48px;
+    }
+    .login-dulu{
+        font-size: 28px;
+    }
+    .login-card{
+        padding: 30px;
+    }
+}
+
+@keyframes fadeUp{
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.muncul1{
+    animation: fadeUp 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
